@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+</head>
+<body bgcolor="khaki">
+<h1 align="center">KM Custom HTML Form Example Using AppleScript <br>(by JMichaelTX)</h1>
+<form action="thanks.html"target="/blank">
+   <center>
+    <table border="2" bgcolor="khaki" width="40%">
+    <tr>
+        <td bgcolor="khaki"  colspan="2"><b>Name:</b></td>
+        <td bgcolor="khaki"><input type="text" id="name" maxlength="15" required></td>
+    </tr>
+    <tr>
+        <td bgcolor="khaki" colspan="2"><b>Email:</b></td>
+        <td bgcolor="khaki"><input type="email" id="email" size="30" required></td>
+    </tr>
+    <tr>
+        <td bgcolor="khaki" colspan="2"><b>Password</b></td>
+        <td><input type="password" id="password" maxlength="5" required></td>
+    </tr>
+    <tr> 
+        <td bgcolor="khaki" colspan="2"><b>Approval Required:</b><br>Click on the button or text to check/uncheck.</td>
+        <td><input type="checkbox">Do you approve?</td>
+    </tr>
+    <tr>
+        <td bgcolor="khaki" colspan="2"><b>Pick Your Favorite:</b><br>Click on the button or text to select.</td>
+        <td><input type="radio" name="select" value="Choice A">Choice A<br><input type="radio" name="select" value="Choice B">Choice B<br><input type="radio" name="select" value="Choice C">Choice C</td>
+    </tr>
+    <tr>
+        <td bgcolor="khaki" colspan="2"><b>Popup Menu:</b></td>
+        <td>
+            <select>
+            <option value="Lahore--Lhr">Lahore--Lhr</option>
+            <option value="Karachi--KRC">Karachi--KC</option>
+            <option value="Islamabad--ISB">Islamabad--ISB</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td bgcolor="khaki" colspan="2"><b>List</b><br>Setup Options
+        <ul>
+            <li>Number of rows to display</li>
+            <li>Allow Multi-select</li>
+        </ul>
+        </td>
+        <td>
+            <select name="cities" multiple>
+               <option value="Lahore--Lhr">Lahore--Lhr</option>
+               <option value="Karachi--KRC">Karachi--KC</option>
+               <option value="Islamabad--ISB">Islamabad--ISB</option>
+               <option value="Kasoor--KSR">Kasoor--KSR</option>
+               <option value="Multan--MLT">Multan--MLT</option>
+
+           </select>
+        </td>
+    </tr>
+    <tr>
+        <td bgcolor="khaki" colspan="2"><b>Field Ignored by KM</b></td>
+        <td><input type="number" id="field" maxlength="5"></td>
+    </tr>
+    <tr>
+        <td bgcolor="khaki" colspan="2"><b>Text Area</b></td>
+        <td><textarea name="comments" id="comments" cols="30" rows="4"></textarea></td>
+    </tr>
+    </table>
+    <button>Save</button>
+    <input type="hidden" name="submit" value="save">
+    <button>Cancel</button>
+    <input type="hidden" name="cancel" value="cancel">
+    <button>Resize</button>
+    <input type="hidden" name="resize" value="resize">
+</center>
+</form>
+</body>
+</html>
